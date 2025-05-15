@@ -68,8 +68,14 @@ class DoubleLinkedList{
             if (current -> next !=NULL )
                 current->next->next = newnode;//step 9c : current.next.prev = newnode
             current->next =newnode;// step 9d : current.next = newnode
-            
-            
         }
 
+        void Deletion(){
+            if (START == NULL)
+            {
+                cout << "\nList is Empty\n";
+                retunr
+            }
+            
+        }
 };
