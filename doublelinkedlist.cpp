@@ -209,12 +209,21 @@ int main (){
             list.addnode();
             break;
         case '2':
+            list.Deletion();
+            break;
         case '3':
+            list.traverse();
+            break;
         case '4':
+            list.revtraverse();
+            break;
         case '5':
+            list.searchdata();
+            break;
         case '6':
             return 0;
         default:
+            cout << "Invalid Option \n";
             break;
         }
     } while (choice !=6);
