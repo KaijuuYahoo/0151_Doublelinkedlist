@@ -74,8 +74,12 @@ class DoubleLinkedList{
             if (START == NULL)
             {
                 cout << "\nList is Empty\n";
-                retunr
+                return;
             }
-            
+
+            cout <<"/nMasukkan NIM yang akan dihapus : ";
+            int rollNo;
+            cin >> rollNo;
+
         }
 };
