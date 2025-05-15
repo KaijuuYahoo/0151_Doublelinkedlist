@@ -127,12 +127,35 @@ class DoubleLinkedList{
             {
                 cout << i + 1 << ". " << currentnode->noMhs << " " << endl;
                 //step 3 : Move to next node
-                cur
+                currentnode = currentnode->next;
+                i++;
+            } 
+        }
+
+        void revtraverse(){
+            if (START == NULL)
+            {
+                cout << "\nList is empty";
+            }
+            //step 1 : Move to last mode
+            node *currentnode = START;
+            int i = 0;
+            while (currentnode ->next != NULL)
+            {
+                currentnode = currentnode->next;
                 i++;
             }
-            
-            
+            //step 2 : Traverse Backward
+            cout << "\nRecords in descending order of roll number are : \n ";
+            while (currentnode != NULL)
+            {
+                cout << i + 1 << ". " << currentnode->noMhs << " " << endl;
+                //step 3 : Move to previous node
+                currentnode = currentnode->next;
+                i--;
+            } 
         }
+
 };
 
 
