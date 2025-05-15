@@ -10,5 +10,6 @@ class node {
 };
 
 class DoubleLinkedList{
-    private
+    private:
+        node
 };
