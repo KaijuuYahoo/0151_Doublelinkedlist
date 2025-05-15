@@ -80,6 +80,35 @@ class DoubleLinkedList{
             cout <<"/nMasukkan NIM yang akan dihapus : ";
             int rollNo;
             cin >> rollNo;
+            node *current = START;
+            //Step 1 : Traverse the list to find the node
+            while ( current != NULL && current -> noMhs != rollNo)
+            {
+                current = current -> next;
+                return;
+            }
 
+            //step 2 : if node is at the beginning
+            if (current == START) {
+                START = current ->next;// Step 2a : START = current.next
+                if (START != NULL)
+                {
+                    START->prev = NULL ; //Step 2b : START.prev = NULL
+                }
+                else 
+                {
+                    //step 3 : Link previous node to tnext of current
+                    current->prev->next= current->next;
+
+                    //step 4 : if current is not the last node
+                    if (current->next !=NULL)
+                        current->next->prev = current->prev;   
+                }
+                delete current;
+                cout<<"Record with roll number " << rollNo << "deleted\n" ;
+                
+            }
+
+            
         }
 };
