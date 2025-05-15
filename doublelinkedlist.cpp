@@ -36,7 +36,7 @@ class DoubleLinkedList{
                 }
                 //step 4 : newnode.next=START
                 newnode->next = START;
-                //step 5 : START.prev = nenode (uf START exists)
+                //step 5 : START.prev = newnode (if START exists)
                 if (START != NULL)
                 {
                     START -> prev = newnode;
@@ -111,4 +111,30 @@ class DoubleLinkedList{
 
             
         }
+        void traverse(){
+            if (START == NULL)
+            {
+                cout << "\nList is empty\n";
+                return;
+            }
+            //step 1 : Mark first node as currentnode
+            node *currentnode = START;
+
+            //Step 2 : Repeat until currentnode == NULL
+            cout << "\nRecords in ascending order of roll number are : \n";
+            int i = 0;
+            while (currentnode != NULL)
+            {
+                cout << i + 1 << ". " << currentnode->noMhs << " " << endl;
+                //step 3 : Move to next node
+                cur
+                i++;
+            }
+            
+            
+        }
 };
+
+
+int main (){
+    }
