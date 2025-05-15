@@ -200,7 +200,23 @@ int main (){
         cout << "4. View Descending\n";
         cout << "5. Search Record\n";
         cout << "6. Exit\n";
-        cout << ""
+        cout << "Enter your Choice : ";
+        cin >> choice;
+
+        switch (choice)
+        {
+        case '1':
+            list.addnode();
+            break;
+        case '2':
+        case '3':
+        case '4':
+        case '5':
+        case '6':
+            return 0;
+        default:
+            break;
+        }
     } while (choice !=6);
     
 }
