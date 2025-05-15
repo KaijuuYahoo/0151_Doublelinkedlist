@@ -39,11 +39,23 @@ class DoubleLinkedList{
                 //step 5 : START.prev = nenode (uf START exists)
                 if (START != NULL)
                 {
-                    START -
+                    START -> prev = newnode;
                 }
-                
-                
+                //step 6 : newnode.prev = NULL
+                newnode -> prev = NULL;
+                //step 7 : START =newnode
+                START = newnode;
+                return;   
             }
+
+            //INSERT in between node
+            //step 8 : Locate position fro insertion
+            node *current = START;
+            while (current -> next != NULL && current->next->noMhs <)
+            {
+                /* code */
+            }
+            
             
         }
 
