@@ -178,10 +178,10 @@ class DoubleLinkedList{
             {
                 cout<< "Record not found\n";
             }
-            
-
-            
-            
+            else {
+                cout << "Record Found\n";
+                cout << "Roll number : " << current->noMhs << endl;
+            }
         }
 
 };
