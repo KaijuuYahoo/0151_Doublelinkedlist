@@ -63,6 +63,11 @@ class DoubleLinkedList{
             //step 9 : Insert between current and current -> next
             newnode -> next = current -> next; //step 9a : newnode -> next = current
             newnode -> prev = current;         // step 9b : newnode -> prev = current;
+
+            //Insert Last node
+            if (current -> next !=NULL )
+                current->next->next = newnode;//step 9c : current.next.prev = newnode
+            current->next =newnode;// step 9d : current.next = newnode
             
             
         }
